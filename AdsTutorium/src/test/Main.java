@@ -1,7 +1,7 @@
-package uebung01;
+package test;
 
-import uebung01.Car;
-import uebung01.Motorcylce;
+import test.Car;
+import test.Motorcylce;
 
 public class Main {
 
