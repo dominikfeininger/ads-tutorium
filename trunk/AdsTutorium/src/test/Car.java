@@ -1,4 +1,4 @@
-package uebung01;
+package test;
 
 public class Car extends Vehicle{
 	

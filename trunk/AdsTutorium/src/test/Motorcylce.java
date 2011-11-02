@@ -1,4 +1,4 @@
-package uebung01;
+package test;
 
 public class Motorcylce extends Vehicle{
 	
