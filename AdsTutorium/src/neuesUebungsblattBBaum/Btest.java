@@ -4,7 +4,7 @@ package neuesUebungsblattBBaum;
 
  * File: Btest.java
 
- * @author Robert ?
+ * @author Dominik Feininger ?
 
  */
 
@@ -34,7 +34,8 @@ class Btest extends Frame {
 
 		setTitle("B-Baum-Test");
 
-		show();
+		//show(); depricated
+		setVisible(true);
 
 	}
 
@@ -69,9 +70,7 @@ class Btest extends Frame {
 		g.setColor(new Color(255, 255, 255));
 
 		for (int i = 0; i < k.sa; i++)
-			g
-					.drawString(new Integer(k.s[i]).toString(), x + 6 + i * 25,
-							y + 15);
+			g.drawString(new Integer(k.s[i]).toString(), x + 6 + i * 25, y + 15);
 
 		g.setColor(new Color(0, 0, 255));
 
@@ -81,8 +80,7 @@ class Btest extends Frame {
 
 	}
 
-	// ------------gibt den Baum auf dem Grafikkontext g
-	// aus-------------------------
+	// ------------gibt den Baum auf dem Grafikkontext g aus-------------------------
 
 	public void zeichnen(Bbaum b, Graphics g) {
 
@@ -92,9 +90,9 @@ class Btest extends Frame {
 
 		g.setColor(new Color(255, 255, 255));
 
-		g.drawString("B-BAUM-VISUALISIERUNG", 20, 40);
+		//g.drawString("B-BAUM-VISUALISIERUNG", 20, 40);
 
-		g.drawString("bis zur Tiefe 3", 20, 55);
+		//g.drawString("bis zur Tiefe 3", 20, 55);
 
 		g.setColor(new Color(255, 150, 150));
 
@@ -112,6 +110,8 @@ class Btest extends Frame {
 
 		zeichne(g, b.Wurzel.p[2], 800, 150, 520, 50);
 
+		//zeichne(g, b.Wurzel.p[3], 1100, 150, 640, 50);
+		
 		// tiefe 3:
 
 		if (b.Wurzel.p[0] != null) {
@@ -143,6 +143,16 @@ class Btest extends Frame {
 			zeichne(g, b.Wurzel.p[2].p[2], 920, 250, 820, 150);
 
 		}
+		
+		/*if (b.Wurzel.p[3] != null) {
+
+			zeichne(g, b.Wurzel.p[3].p[0], 980, 250, 780, 150);
+
+			zeichne(g, b.Wurzel.p[3].p[1], 1100, 250, 800, 150);
+
+			zeichne(g, b.Wurzel.p[3].p[2], 1220, 250, 820, 150);
+
+		}*/
 
 	}
 
@@ -170,14 +180,12 @@ class Btest extends Frame {
 
 		Baum1.einfuegen(8);
 
-		// Baum1.einfuegen(11);
+		//Baum1.einfuegen(11);
 
-		// Baum1.einfuegen(2);
+		//Baum1.einfuegen(2);
 
 		// Baum grafisch darstellen:
 
 		Btest Test1 = new Btest();
-
 	}
-
 }

@@ -4,7 +4,7 @@ package neuesUebungsblattBBaum;
  * 
  * File: Bbaum.java
  * 
- * @author Robert ?
+ * @author Dominik Feininger ?
  */
 
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -235,7 +235,7 @@ public class Bbaum {
 			k1.v = v;
 
 			teilen(k.s[0], v, k0, k1); // den mittleren Schluessel nach oben
-										// weiterreichen
+			// weiterreichen
 
 			return;
 
