@@ -3,7 +3,7 @@ package neuesUebungsblattBBaum;
 /**
  * File: Bknoten.java
  * 
- * @author Robert ?
+ * @author Dominik Feininger ?
  */
 // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // Bknoten-KLASSE
