@@ -1,4 +1,4 @@
-package blatt3uebung4;
+package blatt3uebung04;
 
 public class SelectionSort {
 	
