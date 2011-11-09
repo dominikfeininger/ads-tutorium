@@ -40,8 +40,8 @@ public class MainSortTest {
 		}
 
 		// run binary search iterativ
-		if (-1 != (BinarySort.binarySortIterativ(toSarch, binaryarray))) {
-			System.out.println(BinarySort.binarySortIterativ(toSarch,
+		if (-1 != (BinarySearch.binarySearchIterativ(toSarch, binaryarray))) {
+			System.out.println(BinarySearch.binarySearchIterativ(toSarch,
 					binaryarray));
 		} else {
 			System.out.println("false");

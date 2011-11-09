@@ -1,8 +1,8 @@
 package blatt3uebung01;
 
-public class BinarySort {
+public class BinarySearch {
 
-	public static int binarySortIterativ(final int zeichen, final int[] alphabet) {
+	public static int binarySearchIterativ(final int zeichen, final int[] alphabet) {
 		int erstes = 0;
 		int letztes = alphabet.length - 1;
 
@@ -20,7 +20,7 @@ public class BinarySort {
 		return -1;
 	}
 
-	public static int binarySortRekursic(int indexAnfang, int indexEnde, int eingabeZeichen, int[] alphabet) {
+	public static int binarySearchRekursiv(int indexAnfang, int indexEnde, int eingabeZeichen, int[] alphabet) {
 		if (indexAnfang > indexEnde) {
 			return -1;
 		}
@@ -28,12 +28,12 @@ public class BinarySort {
 		int indexMitte = indexAnfang + ((indexEnde - indexAnfang) / 2);
 
 		if (eingabeZeichen > alphabet[indexMitte]) {
-			return binarySortRekursic(indexMitte + 1, indexEnde,
+			return binarySearchRekursiv(indexMitte + 1, indexEnde,
 					eingabeZeichen, alphabet);
 		}
 
 		if (eingabeZeichen < alphabet[indexMitte]) {
-			return binarySortRekursic(indexAnfang, indexMitte - 1,
+			return binarySearchRekursiv(indexAnfang, indexMitte - 1,
 					eingabeZeichen, alphabet);
 		}
 
