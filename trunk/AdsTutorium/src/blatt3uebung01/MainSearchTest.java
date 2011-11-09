@@ -2,7 +2,7 @@ package blatt3uebung01;
 
 import java.util.Random;
 
-public class MainSortTest {
+public class MainSearchTest {
 
 	/**
 	 * @param args
