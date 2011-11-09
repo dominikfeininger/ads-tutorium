@@ -2,8 +2,6 @@ package blatt3uebung01;
 
 import java.util.Random;
 
-import blatt3uebung04.BinarySort;
-
 public class MainSortTest {
 
 	/**

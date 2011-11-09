@@ -1,4 +1,4 @@
-package blatt3uebung04;
+package blatt3uebung01;
 
 public class BinarySort {
 
