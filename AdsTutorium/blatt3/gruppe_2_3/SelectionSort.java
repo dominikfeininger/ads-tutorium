@@ -14,15 +14,20 @@ public class SelectionSort {
 		 * int [] unsorted = { 89464, 8946, 684666, 678, 68768, 68768, 978 }; 
 		 * int [] unsorted = { 57, 0, 684, 987812, 54887, 4, 4 };
 		 */
+		
+		//TODO: komische Ausgabe des sorted Array
+		int[] F;
+		F = new int[] { 10, 4, 33, 44, 17, 20, 3, 2, 9, 82, 38, 67, 55, 11, 32,
+				23, 19, 7, 6, 14, 29 }; // "zufälliges" Feld
 
 		int[] unsorted = { 9, 20, 5, 8, 77, 55, 33, 548, 789, 1 };
 
 		print("unsorted : ");
 		println();
-		printArray(unsorted);
+		printArray(F);
 		println();
 
-		int[] sorted = selectionSort(unsorted);
+		int[] sorted = selectionSort(F);
 
 		print("sorted : ");
 		printArray(sorted);
@@ -98,6 +103,8 @@ public class SelectionSort {
 		println();
 		println();
 		println("needed comparisons: " + comparisons);
+		
+		//TODO: zu viele swaps!!!
 		println("needed swappings: " + swappings);
 		return sortedArray;
 	}

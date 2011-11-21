@@ -3,6 +3,8 @@ package gruppe_2_9;
 import static gdi.MakeItSimple.*;
 
 public class KomplexitaetsExperiment {
+	
+	//TODO: Ausgabe verständlich mahcen!!!
 
 	/**
 	 * @param args

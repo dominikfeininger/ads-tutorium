@@ -3,16 +3,22 @@ package gruppe_2_3;
 // Gruppe 2/3
 import static gdi.MakeItSimple.*;
 
+//TODO: Kommentare!!!
+
 public class ShakerSort {
 	public static void main(String[] args) {
+		// TODO: anzahl vergleiche falsch? 27 (3*9)!!! Bsp. auf Blatt?
 
 		int[] array = { 78, 8, 6, 99, 5, 4, 51, 2, 88 };
 
+		// TODO: Musterlösung
+		int[] F = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 };
+
 		println();
 		println();
-		printArray(array);
+		printArray(F);
 		print("       Ausgangsfolge");
-		int[] sorted = shakerSort(array);
+		int[] sorted = shakerSort(F);
 		println();
 		println();
 		println("Sorted Array:");
