@@ -3,6 +3,8 @@ package gruppe_2_9;
 import static gdi.MakeItSimple.*;
 
 public class SelectionSort {
+	
+	//TODO: Ergebnis net schlecht, aber Vergleiche und Vertaushcungen falsch gez‰hlt!!!
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,14 +13,17 @@ public class SelectionSort {
 		// int row[] = { 123,125,135,145,135,125,123 };
 		// int row[] = { 1,4,2,5,6,1,15,1515,15,15,51,5,6666,2243,234,244,111,11,1,0,15,51,123,51,16,135,999,9999,99999 };
 		int row[] = { 1,2,3,4,5,262,62,73,25,14,3874,1,2,3,4 };
+		int[] F;
+		F = new int[] { 10, 4, 33, 44, 17, 20, 3, 2, 9, 82, 38, 67, 55, 11, 32,
+				23, 19, 7, 6, 14, 29 }; // "zufälliges" Feld
 		// int row[] = { 2000000,199999,99999};
 		// int row[] = { 1,2};
 		int i = 0, compare = 0, changes = 0;
 
-		selectionSort(row, compare, changes);
+		selectionSort(F, compare, changes);
 
-		while (i < row.length) {
-			print(row[i] + ". ");
+		while (i < F.length) {
+			print(F[i] + ". ");
 			i++;
 
 		}

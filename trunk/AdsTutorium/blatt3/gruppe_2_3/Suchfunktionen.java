@@ -26,7 +26,7 @@ public class Suchfunktionen {
 		int linearFirst = linearFirstIndex(sortedNumbers, searched);
 		int binaryRecursive = binarySearchRecursive(sortedNumbers, searched, first, last);
 		int binaryIterative = binarySearchIterative(sortedNumbers, searched);
-		
+		//TODO: ergebnis direkt ausgeben
 		println("Linear Search ( Last Index)");
 		if(linearLast == -1){
 			println("digit not found!");
@@ -118,6 +118,7 @@ public class Suchfunktionen {
 	
 	static void fillArray(int[] array) {
 		// fill given Array in ascending order via side effect
+		//TODO: was macht diese Methode??? mod 2 usw.
 		int i = 0;
 		int number = 1;
 		while (i < array.length) {

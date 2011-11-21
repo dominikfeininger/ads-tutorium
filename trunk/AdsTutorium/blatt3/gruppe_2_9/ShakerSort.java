@@ -8,20 +8,23 @@ public class ShakerSort {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		
+		//TODO: Ergebnis richtig, Darstellung!!! zu wenig zeilen
 
 		// Initializing variables
 		int[] numbers = { 44, 55, 12, 42, 94, 18, 6, 67 };
+		int [] F = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 };
 		println("Eingabe der Arraylänge");
 		int i = 0;
 		int compare = 0;
 		int countedSort = 0;
 
 		// requesting function shakerSort
-		shakerSort(numbers, compare, countedSort);
+		shakerSort(F, compare, countedSort);
 
 		// loop to print array on console
-		while (i < numbers.length) {
-			print(numbers[i] + ". ");
+		while (i < F.length) {
+			print(F[i] + ". ");
 			i++;
 		}
 

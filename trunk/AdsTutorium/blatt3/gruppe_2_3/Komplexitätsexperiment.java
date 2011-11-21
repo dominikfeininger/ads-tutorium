@@ -3,6 +3,8 @@ package gruppe_2_3;
 import static gdi.MakeItSimple.*;
 
 public class Komplexitätsexperiment {
+	
+	//TODO: Kommentare???
 
 	public static void main(String[] args) {
 		// initialize and fill array in ascending order ( 1 to max )
@@ -39,8 +41,7 @@ public class Komplexitätsexperiment {
 		 */
 
 		while (index < 100000) {
-			int array1024 = (int) Math.floor(Math.random()
-					* (shortArray.length + 200));
+			int array1024 = (int) Math.floor(Math.random() * (shortArray.length + 200));
 			int array2048 = (int) Math.floor(Math.random()
 					* (midArray.length + 400));
 			int array4096 = (int) Math.floor(Math.random()
