@@ -2,7 +2,7 @@ package gruppe_2_1;
 
 import static gdi.MakeItSimple.*;
 
-public class Komplexitätsexperiment {
+public class Komplexit‰tsexperiment {
 
 	public static void main(String[] args) {
 		//TODO: Beschriftung console stimmt nicht!!!
