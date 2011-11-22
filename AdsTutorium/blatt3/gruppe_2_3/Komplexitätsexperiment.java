@@ -2,7 +2,7 @@ package gruppe_2_3;
 
 import static gdi.MakeItSimple.*;
 
-public class Komplexitätsexperiment {
+public class Komplexit‰tsexperiment {
 	
 	//TODO: Kommentare???
 
