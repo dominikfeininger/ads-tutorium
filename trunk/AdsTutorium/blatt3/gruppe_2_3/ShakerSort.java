@@ -7,7 +7,6 @@ import static gdi.MakeItSimple.*;
 
 public class ShakerSort {
 	public static void main(String[] args) {
-		// TODO: anzahl vergleiche falsch? 27 (3*9)!!! Bsp. auf Blatt?
 
 		int[] array = { 78, 8, 6, 99, 5, 4, 51, 2, 88 };
 

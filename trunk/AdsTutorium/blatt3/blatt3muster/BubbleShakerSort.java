@@ -191,7 +191,7 @@ class BubbleShakerSort {
 
 		// Fest vorgegebene TestfŠlle fŸr die Testate
 
-		// F = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // F ist schon
+		 F = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // F ist schon
 		// sortiert
 		// #Vgl = 9, #Dlf = 1, # Vert = 0
 		// F = new int [] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1}; // F ist umgekehrt
@@ -200,7 +200,7 @@ class BubbleShakerSort {
 		// F = new int [] {10, 1, 9, 2, 8, 3, 7, 4, 6, 5}; // F ist
 		// alternierend, umgekehrt sortiert
 		// #Vgl = 42, #Dlf = 7, # Vert = 25
-		F = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 }; // F ist fast sortiert
+		//F = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 }; // F ist fast sortiert
 															// - das kleinste
 															// Element steht
 															// ganz rechts
