@@ -12,7 +12,6 @@ public class ShakerSort {
 		for (int i = 0; i < array.length; i++)
 			array[i] = (int) Math.floor(Math.random() * 40);
 
-		//TODO: anzahl vergleiche falsch? 27 (3*9)!!! Bsp. auf Blatt? Lösung:24
 		int[] F = new int[] { 2, 3, 4, 5, 6, 7, 8, 9, 10, 1 };
 		shakerSort(F);
 	}

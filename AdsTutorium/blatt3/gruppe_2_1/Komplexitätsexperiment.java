@@ -12,8 +12,6 @@ public class Komplexitätsexperiment {
 		unsuccesfulSearch();
 	}
 
-	// TODO: funktion in anderer Klasse aufrufen
-	// Suchfunktionen.binarySearchIterative(array, searchKey)
 
 	/**
 	 * return number of comparison

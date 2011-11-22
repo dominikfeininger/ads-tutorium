@@ -197,7 +197,7 @@ public class SelectionSort {
 		// F = new int [] {10, 1, 2, 3, 4, 5, 6, 7, 8, 9}; // F ist fast
 		// sortiert - das größte Element steht ganz links
 
-		// F = new int [] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}; // F ist sortiert -
+		 //F = new int [] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5}; // F ist sortiert -
 		// alle Element sind gleich
 
 		//
