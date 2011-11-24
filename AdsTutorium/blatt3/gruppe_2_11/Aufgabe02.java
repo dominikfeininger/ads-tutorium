@@ -3,7 +3,7 @@ package gruppe_2_11;
 import static gdi.MakeItSimple.*;
 
 public class Aufgabe02 {
-
+	//TODO: Kommentare!!!
 static int linearSearch1(int[] numbers, int search) {
 	/* To search the array in every element from
 	 * the front to the back it ends with the last
@@ -76,6 +76,9 @@ static int linearSearch1(int[] numbers, int search) {
 	}
 	
 	public static void main(String[] args) {
+		
+		
+		//TODO. Ausgabe strukturieren
 		int[] numbers = new int [1024];
 		int search, index = 0, indexEnd = numbers.length -1, läufe = 0, compare = 0, a = 0, b= 0;
 		for (int i = 0; i<numbers.length; i++) {numbers[i] = i;};
@@ -107,7 +110,7 @@ static int linearSearch1(int[] numbers, int search) {
 		while (läufe <= 100){
 			
 			search = (int) (Math.random() * 2048);
-
+			//TODO: ermittelte Werte in Tabelle eintragen!!!!
 			println("lineare Suche letzter Treffer: " + linearSearch1(numbers, search));
 			println("lineare Suche erster Treffer: " + linearSearch2(numbers, search));
 			println("binäre Suche rekursiv: " + binarySearchRec(numbers, search, index, indexEnd, compare));

@@ -1,7 +1,7 @@
 package gruppe_2_11;
 
 import static gdi.MakeItSimple.*;
-
+//TODO: Kommentare!!!
 public class Aufgabe04 {
 	static void swap(int[] numbers, int index1, int index2) {
 		// To swap two numbers in an array.
@@ -68,9 +68,16 @@ public class Aufgabe04 {
 	}
 
 	public static void main(String[] args) {
-		int[] numbers = {7, 5, 1, 3, 6, 4};
+		//TODO. vgl doppel so hoch!!!
+		int[] numbers;// = {7, 5, 1, 3, 6, 4};
+		//numbers = new int [] {1,2,3,4,5,6,7,8,9,10};
+		//numbers = new int [] {2,3,4,5,6,7,8,9,10,1};
+		numbers = new int [] {10,9,8,7,6,5,4,3,2,1};
+		//TODO. 45, 45
+		printArray(numbers);
 		
-		println(ShakerSort(numbers));
+		System.out.println();
+		System.out.println(ShakerSort(numbers));
 
 	}
 
