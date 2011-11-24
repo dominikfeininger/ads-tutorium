@@ -3,7 +3,8 @@ package gruppe_2_11;
 import static gdi.MakeItSimple.*;
 
 public class Aufgabe01 {
-
+//TODO: Kommentare!!!
+	//Methoden Kommentare als JavaDoc
 static int linearSearch1(int[] numbers, int search) {
 	/* To search the array in every element from
 	 * the front to the back it ends with the last
@@ -16,7 +17,7 @@ static int linearSearch1(int[] numbers, int search) {
 		}
 		return found;
 	}
-
+	//TODO: linear last search flasch
 	static int linearSearch2(int[] numbers, int search) {
 		/*To search the array in every element
 		 * from he back to the front it ends when
@@ -29,7 +30,16 @@ static int linearSearch1(int[] numbers, int search) {
 		}
 		return found;
 	}
-
+/**
+ * 
+ * @param numbers
+ * @param search
+ * @param index
+ * @param indexEnd
+ * @return
+ */
+	
+	//TODO:Outof Bounds eXp bei kleineren Werten (0) die nicht im Array sind
 	static int binarySearchRec(int[] numbers, int search, int index, int indexEnd) {
 			
 		if (index > indexEnd){    			
@@ -71,7 +81,7 @@ static int linearSearch1(int[] numbers, int search) {
 	
 	public static void main(String[] args) {
 		int[] numbers = {1, 2, 3, 4, 5, 5};
-		int search = 8, index = 0, indexEnd = numbers.length -1;
+		int search = readInt(), index = 0, indexEnd = numbers.length -1;
 
 
 		println(linearSearch1(numbers, search));
