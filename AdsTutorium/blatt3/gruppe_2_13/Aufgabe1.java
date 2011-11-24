@@ -89,7 +89,7 @@ public class Aufgabe1 {
 
 	public static void main(String[] args) {
 
-		int [] array = {6,55,12,18,42,55,55,44,55,67,94};   // fix array 
+		int [] array = new int[0];//{6,55,12,18,42,55,55,44,55,67,94};   // fix array 
 		//int[] array = new int[100];
 		int ausgabe, eingabe, anfangIndex = 0, endIndex = array.length - 1;
 
