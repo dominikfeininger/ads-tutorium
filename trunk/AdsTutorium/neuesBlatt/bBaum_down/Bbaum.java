@@ -26,9 +26,7 @@ public class Bbaum {
 	// B-Baum:-----------------------------------
 
 	public boolean suche(int key) {
-
 		return suche(key, Wurzel);
-
 	}
 
 	public boolean suche(int key, Bknoten k) {
