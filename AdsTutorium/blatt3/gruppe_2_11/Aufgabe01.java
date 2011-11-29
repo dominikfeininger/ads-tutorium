@@ -17,7 +17,7 @@ static int linearSearch1(int[] numbers, int search) {
 		}
 		return found;
 	}
-	//TODO: linear last search flasch
+
 	static int linearSearch2(int[] numbers, int search) {
 		/*To search the array in every element
 		 * from he back to the front it ends when
@@ -45,13 +45,13 @@ static int linearSearch1(int[] numbers, int search) {
 		if (index > indexEnd){    			
 			return -1;
 		}	
-		int indexMiddle = index + ((indexEnd - index) / 2);
+		int indexMiddle =  index + ((indexEnd - index) / 2);
 		
 		if (numbers[indexMiddle] < search){
-			return binarySearchRec(numbers, search, index + 1, indexEnd);
+			return binarySearchRec(numbers, search, indexMiddle + 1, indexEnd);
 		}
 		if (numbers[indexMiddle] > search){
-			return binarySearchRec(numbers, search, index - 1, indexEnd);
+			return binarySearchRec(numbers, search, index, indexMiddle -1);
 		}
 		return indexMiddle;	
 		}
@@ -80,7 +80,7 @@ static int linearSearch1(int[] numbers, int search) {
 	}
 	
 	public static void main(String[] args) {
-		int[] numbers = {1, 2, 3, 4, 5, 5};
+		int[] numbers = {1, 2, 3, 4, 5};
 		int search = readInt(), index = 0, indexEnd = numbers.length -1;
 
 
