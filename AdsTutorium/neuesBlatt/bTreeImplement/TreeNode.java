@@ -1,19 +1,19 @@
 package bTreeImplement;
 
-
 public class TreeNode {
 
 	// node value
 	private int value;
-	//qty of cilds
+	// qty of cilds
 	private int childqty;
 	// child nodes, max. childqty
-	private int [] childnodes = new int[childqty];
-	// leaf?
-	private boolean isleaf;
+	private TreeNode[] childnodes = new TreeNode[childqty];
 	// father of this node
-	TreeNode v;
-	
+	private TreeNode father;
+	// keys
+	private int keys[] = new int[2];
+	// number of keys
+	private int numberOfKeys;
 
 	/**
 	 * constuctor with root node value = 0;
@@ -25,39 +25,81 @@ public class TreeNode {
 	public TreeNode(int val) {
 		this.value = val;
 	}
+
+	public TreeNode(int key, TreeNode v, TreeNode child1, TreeNode child2) {
+		childnodes[0] = child1;
+		childnodes[1] = child2;
+		childnodes[2] = null;
+		keys[0] = key;
+		numberOfKeys = 1;
+		this.father = v;
+	}
 	
-	//Getter and Setter
+	public void add(int key, TreeNode l, TreeNode r) {
+		if (numberOfKeys == 2) {
+			System.out.println("Knoten ist schon voll");
+			return;
+		}
+		numberOfKeys = 2;
+		if (key < keys[0]) {
+			keys[1] = keys[0];
+			keys[0] = key;
+			childnodes[0] = l;
+			childnodes[2] = childnodes[1];
+			childnodes[1] = r;
+		} else {
+			keys[1] = key;
+			childnodes[1] = l;
+			childnodes[2] = r;
+		}
+	}
 	
+	/**
+	 * makes System.out.println(value);
+	 */
+	public void print(){
+		System.out.println(this.value);
+	}
+
+	// Getter and Setter
+	public int[] getKeys() {
+		return this.keys;
+	}
+
+	public void setKeys(int[] key) {
+		this.keys = key;
+	}
+
+	public int getNumberOfKeys() {
+		return this.numberOfKeys;
+	}
+
+	public void setNumberOfKeys(int numberOfKeys) {
+		this.numberOfKeys = numberOfKeys;
+	}
+
 	public int getChildqty() {
-		return childqty;
+		return this.childqty;
 	}
 
 	public void setChildqty(int childqty) {
 		this.childqty = childqty;
-	}	
-	
-	public int[] getChildnodes() {
-		return childnodes;
 	}
 
-	public void setChildnodes(int[] childnodes) {
+	public void setChildnodes(TreeNode[] childnodes) {
 		this.childnodes = childnodes;
 	}
 
-	public boolean isIsleaf() {
-		return isleaf;
+	public TreeNode[] getChildnodes() {
+		return this.childnodes;
 	}
 
-	public void setIsleaf(boolean isleaf) {
-		this.isleaf = isleaf;
+	public TreeNode getFather() {
+		return this.father;
 	}
 
-	public TreeNode getV() {
-		return v;
-	}
-
-	public void setV(TreeNode v) {
-		this.v = v;
+	public void setFather(TreeNode v) {
+		this.father = v;
 	}
 
 	public void setValue(int val) {
@@ -65,7 +107,6 @@ public class TreeNode {
 	}
 
 	public int getValue() {
-		return value;
+		return this.value;
 	}
-
 }
