@@ -1,5 +1,5 @@
 
-package quickSort;
+package muster.quickSort;
 
 import static gdi.MakeItSimple.*;
 
