@@ -1,4 +1,4 @@
-package shellSortModular;
+package muster.shellSortModular;
 
 /**
  * @author schramm

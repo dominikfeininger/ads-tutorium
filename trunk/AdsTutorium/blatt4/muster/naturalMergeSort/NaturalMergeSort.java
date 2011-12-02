@@ -1,4 +1,4 @@
-package naturalMergeSort;
+package muster.naturalMergeSort;
 
 
 /**
