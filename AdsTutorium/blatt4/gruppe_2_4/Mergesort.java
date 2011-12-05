@@ -71,16 +71,16 @@ public class Mergesort {
 				Object storeA = openOutputFile("storeA.txt");
 				Object storeB = openOutputFile("storeB.txt");
 
-				int vorg‰nger = Integer.MIN_VALUE; // saves value for compare
+				int vorg√§nger = Integer.MIN_VALUE; // saves value for compare
 				int nachfolger = Integer.MIN_VALUE; // reads next value
 				int swapcounter = 0; // swaps stores (A(even)<>B(odd)) on count
 
 				while (!isEndOfInputFile(input)) {
 
-					vorg‰nger = nachfolger;
+					vorg√§nger = nachfolger;
 					nachfolger = readInt(input);
 
-					if (nachfolger >= vorg‰nger)
+					if (nachfolger >= vorg√§nger)
 						writeStores(nachfolger, swapcounter, storeA, storeB);
 					else
 						writeStores(nachfolger, ++swapcounter, storeA, storeB);
