@@ -16,9 +16,9 @@ public class Mergesort {
 		Object Protokoll;
 		
 		println("Bitte Dateinamen eingeben (MIT ENDUNG):");
-		//fileName = readLine();
-		String path = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers01.txt";
-		filePath = path; //+ fileName;
+		fileName = "test.txt";//readLine();
+		String path = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/";
+		filePath = path + fileName;
 		
 		if(isFilePresent(filePath) && isFileReadable(filePath) && isFileWritable(filePath)) {
 			Band1 = openInputFile(filePath);

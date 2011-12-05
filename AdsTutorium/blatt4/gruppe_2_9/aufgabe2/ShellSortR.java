@@ -9,6 +9,18 @@ public class ShellSortR {
 	static int exchanges = 0;
 
 	public static void main(String[] args) {
+		//int[] F = new int[40];
+		//int[] F = {10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		//int [] F = new int[] {10, 4, 33, 44, 17, 20, 3, 2, 9, 82, 38, 67, 55, 11, 32, 23, 19, 7, 6, 14, 29}; // "zufälliges" Feld
+//		# Vergleiche: 106  # Vertauschungen: 68	
+//		int [] F = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  // F ist schon sortiert
+//		# Vergleiche: 23  # Vertauschungen: 0		
+ // 	int [] F = new int [] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};  // F ist umgekehrt sortiert
+//		# Vergleiche: 32  # Vertauschungen: 18
+//		int [] F = new int [] {10, 1, 9, 2, 8, 3, 7, 4, 6, 5};  // F ist alternierend, umgekehrt sortiert
+//		# Vergleiche: 34  # Vertauschungen: 21
+		int [] F = new int [] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};  // F ist sortiert - alle Elemente sind gleich
+//		# Vergleiche: 23  # Vertauschungen: 0
 		int liste[] = { 7, 4, 3, 3, 1, 8, 11 };
 		int i = 0;
 
@@ -20,7 +32,7 @@ public class ShellSortR {
 		println();
 
 		// execution of shellSort function
-		shellSort(liste);
+		shellSort(F);
 
 		println();
 		println("runs: " + runs);
