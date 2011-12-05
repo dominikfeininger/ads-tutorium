@@ -24,7 +24,7 @@ public class MergeSort {
 		Object file1, file2, file3;
 		String tmp1 = "tmp01.txt";
 		String tmp2 = "tmp02.txt";
-		String file = "C:\\Users\\Michael\\eclipse\\B4G209\\src\\aufgabe1\\numbers01.txt";
+		String file = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers04.txt";
 		int runs = 0;
 
 		if (startSort == 1) {

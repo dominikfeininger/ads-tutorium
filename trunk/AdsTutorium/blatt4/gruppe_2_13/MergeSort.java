@@ -442,15 +442,15 @@ public class MergeSort {
 	public static void main(String[] args) {
 		// int zahl;
 		boolean zugeordnet;
-		String dateiName = "Uebung04.txt", teil1 = "teil1.txt", teil2 = "teil2.txt";
+		String dateiName = "numbers04.txt", teil1 = "teil1.txt", teil2 = "teil2.txt";
 		// Object datei = openOutputFile(dateiName);
 		// for (int i = 0; i < 32; i++) {
 		// zahl = (int) (Math.random() * 100) + 0;
 		// print(datei, " " + zahl);
 		// }
 		// closeOutputFile(datei);
-		print("Bitte geben Sie den Name des Datei: ");
-		dateiName = readLine();
+		//print("Bitte geben Sie den Name des Datei: ");
+		//dateiName = readLine();
 		if(isFilePresent(dateiName)){
 			print("Urprunglich Datei: ");
 			printDatei(dateiName);

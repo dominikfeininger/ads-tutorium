@@ -435,29 +435,32 @@ public class Mergesort {
 		String file="";
 		int i=0;
 		
-		while(i!=3){
-			println("Bitte wählen sie: \n 1)Wenn sie eine Datei sortieren wollen \n 2)Wenn sie die runs ausgeben wollen \n 3)Für Beenden");
-			i=readInt();
-			if (i==1){
-				println("Bitte geben sie die Datei an die Sortiert werden soll: ");
-				readLine();
-				file=readLine();
-				if (!isFilePresent(file))
-					println("Datei existiert nicht");
-				else
-					mergesort(file);
-			}
-			if (i==2){
-				println("Bitte geben sie die Datei an die Sortiert werden soll: ");
-				readLine();
-				file=readLine();
-				if (!isFilePresent(file))
-					println("Datei existiert nicht");
-				else
-					printruns(file);
-			}
-			if(i!=1 && i!=2 && i!=3)
-				println("Üngultige Einagbe");
-		}
+		file = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers03.txt";
+		mergesort(file);
+		printruns(file);
+//		while(i!=3){
+//			println("Bitte wï¿½hlen sie: \n 1)Wenn sie eine Datei sortieren wollen \n 2)Wenn sie die runs ausgeben wollen \n 3)Fï¿½r Beenden");
+//			i=readInt();
+//			if (i==1){
+//				println("Bitte geben sie die Datei an die Sortiert werden soll: ");
+//				readLine();
+//				file=readLine();
+//				if (!isFilePresent(file))
+//					println("Datei existiert nicht");
+//				else
+//					mergesort(file);
+//			}
+//			if (i==2){
+//				println("Bitte geben sie die Datei an die Sortiert werden soll: ");
+//				readLine();
+//				file=readLine();
+//				if (!isFilePresent(file))
+//					println("Datei existiert nicht");
+//				else
+//					printruns(file);
+//			}
+//			if(i!=1 && i!=2 && i!=3)
+//				println("ï¿½ngultige Einagbe");
+//		}
 	}
 }

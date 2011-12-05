@@ -4,7 +4,7 @@ public class ShellSort {
 	public static int anzahlDerVergleiche=0, anzahlDerVertauchungen=0;
 	
 	/**
-	 * Diese Funktion führt der ShellSort durch.
+	 * Diese Funktion fï¿½hrt der ShellSort durch.
 	 * @param array Das Array zu bearbeiten.
 	 */
 	public static void meinShellSort(int[]array){
@@ -24,7 +24,7 @@ public class ShellSort {
 					}
 					else break;
 				}
-				array[zaehler2]=gearbeitetElement;//PB:manchmal wird keine änderung gemacht und troztdem ist diese instruction durchgeführt
+				array[zaehler2]=gearbeitetElement;//PB:manchmal wird keine ï¿½nderung gemacht und troztdem ist diese instruction durchgefï¿½hrt
 				anzahlDerVertauchungen++;
 				print("mit ein Schritt von "+schritt+" ist das Array:");
 				printArray(array);
@@ -34,7 +34,7 @@ public class ShellSort {
 	}
 	
 	/**
-	 * Diese Funktion gibt(drückt) die Elemente eines Arrays aus.
+	 * Diese Funktion gibt(drï¿½ckt) die Elemente eines Arrays aus.
 	 * @param array Das array zu bearbeiten.
 	 */
 	public static void printArray(int[] array) {
@@ -45,13 +45,28 @@ public class ShellSort {
 	}
 	
 	public static void main(String[] args) {
+		
+		//int[] F = new int[40];
+		//int[] F = {10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		//int [] F = new int[] {10, 4, 33, 44, 17, 20, 3, 2, 9, 82, 38, 67, 55, 11, 32, 23, 19, 7, 6, 14, 29}; // "zufÃ¤lliges" Feld
+//		# Vergleiche: 106  # Vertauschungen: 68	
+//		int [] F = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  // F ist schon sortiert
+//		# Vergleiche: 23  # Vertauschungen: 0		
+  	int [] F = new int [] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};  // F ist umgekehrt sortiert
+//		# Vergleiche: 32  # Vertauschungen: 18
+//		int [] F = new int [] {10, 1, 9, 2, 8, 3, 7, 4, 6, 5};  // F ist alternierend, umgekehrt sortiert
+//		# Vergleiche: 34  # Vertauschungen: 21
+//		int [] F = new int [] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};  // F ist sortiert - alle Elemente sind gleich
+//		# Vergleiche: 23  # Vertauschungen: 0
+  	
+  	
 		//int []array={44,6,55,30,94,18,1,48,33,15,66};
 		int []array={15,13,26,28,59,45,35,16,28,24,11,2,3,4};
 		print("eingegebene Array: ");
-		printArray(array);
-		meinShellSort(array);
+		printArray(F);
+		meinShellSort(F);
 		print("Sortirt Array    : ");
-		printArray(array);
+		printArray(F);
 		println("Anzhal Der Vergleiche: "+anzahlDerVergleiche);
 		println("Anzhal Der Vertauchungen: "+anzahlDerVertauchungen);
 
