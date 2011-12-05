@@ -2,7 +2,7 @@ package klausur;
 
 import static gdi.MakeItSimple.*;
 
-public class bin‰reSuche {
+public class bin√§reSuche {
 
 	/**
 	 * @param args
