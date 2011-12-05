@@ -2,7 +2,7 @@ package gruppe_2_1;
 
 import static gdi.MakeItSimple.*;
 
-public class Komplexitätsexperiment {
+public class KomplexitÃ¤tsexperiment {
 
 	public static void main(String[] args) {
 		//TODO: Beschriftung console stimmt nicht!!!
@@ -78,7 +78,7 @@ public class Komplexitätsexperiment {
 
 			// calculating the middle
 			middle = (lowerBound + upperBound) / 2;
-			//TODO: statt searchKeyFound andere Möglichkeit: else geschachtelt
+			//TODO: statt searchKeyFound andere Mï¿½glichkeit: else geschachtelt
 			numberOfComparisons++;
 			if (searchKey == array[middle]) {
 				searchKeyFound = true; // abandon search
@@ -93,7 +93,7 @@ public class Komplexitätsexperiment {
 			else {
 				lowerBound = middle + 1;
 			}
-			//TODO: wie in Musterlösung:
+			//TODO: wie in Musterlï¿½sung:
 			//numberOfComparisons++;
 		}
 
@@ -166,7 +166,7 @@ public class Komplexitätsexperiment {
 		int average = 0;
 		int numberOfCallings = 0;
 
-		// TODO: für jeden Vergleich eine neue random Zahl!!!
+		// TODO: fï¿½r jeden Vergleich eine neue random Zahl!!!
 		// runs with first array
 		// /////////////////////////////////
 		// initialize keys
@@ -238,7 +238,7 @@ public class Komplexitätsexperiment {
 		average = 0;
 		numberOfCallings = 0;
 
-		// binäre Suche (iterativ)
+		// binï¿½re Suche (iterativ)
 
 		while (numberOfCallings < 100) {
 
@@ -278,7 +278,7 @@ public class Komplexitätsexperiment {
 		average = 0;
 		numberOfCallings = 0;
 
-		// binäre Suche Rekursiv
+		// binï¿½re Suche Rekursiv
 
 		while (numberOfCallings < 100) {
 
