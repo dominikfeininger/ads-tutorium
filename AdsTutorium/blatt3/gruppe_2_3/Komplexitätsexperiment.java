@@ -2,7 +2,7 @@ package gruppe_2_3;
 
 import static gdi.MakeItSimple.*;
 
-public class Komplexitätsexperiment {
+public class KomplexitÃ¤tsexperiment {
 	
 	//TODO: Kommentare???
 
@@ -156,7 +156,7 @@ public class Komplexitätsexperiment {
 		
 		/* 
 		 * Analysis
-		 * Arraylänge(Anzhal der Suchen): durchschnittliche Anzahl Schlüsselvergleiche
+		 * Arraylï¿½nge(Anzhal der Suchen): durchschnittliche Anzahl Schlï¿½sselvergleiche
 		 */
 		println("Linear Search Last:");
 		println("Succecfull");
