@@ -7,18 +7,18 @@ public class Mergesort {
 	public static void main(String[] args) {
 		String fileName = "";
 		String filePath = "";
-		String band2Path = "C:\\Users\\Daniel\\Documents\\ADS\\ueb4a1\\Band2.txt";
-		String band3Path = "C:\\Users\\Daniel\\Documents\\ADS\\ueb4a1\\Band3.txt";
-		String protokollPath = "C:\\Users\\Daniel\\Documents\\ADS\\ueb4a1\\protokoll.txt";
+		String band2Path = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/gruppe_2_2/aufgabe1/Band1.txt";
+		String band3Path = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/gruppe_2_2/aufgabe1/Band2.txt";
+		String protokollPath = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/gruppe_2_2/aufgabe1/protokoll.txt";
 		Object Band1;
 		Object Band2;
 		Object Band3;
 		Object Protokoll;
 		
 		println("Bitte Dateinamen eingeben (MIT ENDUNG):");
-		fileName = readLine();
-		String path = "C:\\Users\\Daniel\\Documents\\ADS\\ueb4a1\\";
-		filePath = path + fileName;
+		//fileName = readLine();
+		String path = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers01.txt";
+		filePath = path; //+ fileName;
 		
 		if(isFilePresent(filePath) && isFileReadable(filePath) && isFileWritable(filePath)) {
 			Band1 = openInputFile(filePath);
@@ -63,7 +63,7 @@ public class Mergesort {
 			}
 		}
 		else {
-			println("Die eingegebene Datei existiert nicht oder ist schreibgeschützt!");
+			println("Die eingegebene Datei existiert nicht oder ist schreibgeschï¿½tzt!");
 		}
 	}
 	/**
