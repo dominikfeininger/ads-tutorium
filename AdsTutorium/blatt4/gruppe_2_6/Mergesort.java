@@ -435,7 +435,7 @@ public class Mergesort {
 		String file="";
 		int i=0;
 		
-		file = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers03.txt";
+		file = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers01.txt";
 		mergesort(file);
 		printruns(file);
 //		while(i!=3){

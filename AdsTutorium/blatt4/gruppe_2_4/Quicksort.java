@@ -38,7 +38,7 @@ int [] F = new int [] {2, 3, 4, 5, 6, 7, 8, 9, 10, 1};  // F ist fast sortiert -
 		
 		int[] array = {44,6,55,30,94,18};
 		int untereGrenze = 0;
-		int obereGrenze = array.length-1;
+		int obereGrenze = F	.length-1;
 		QuickSort(F, untereGrenze, obereGrenze);
 		System.out.println("vergleiche :" +vergleiche +"tauschen :"+tauschen);
 		for (int i1 = 0; i1 < array.length; i1++) {
