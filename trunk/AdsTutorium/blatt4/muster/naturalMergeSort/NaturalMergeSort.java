@@ -373,7 +373,7 @@ class NaturalMergeSort {
 	String filename2, filename3;
 	
 	print ("file to be sorted = ");
-	filename = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers01.txt";//readLine();
+	filename = "/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers04.txt";//readLine();
 	
 	if (isFilePresent(filename)) {
 		filename1 = filename + "___1";

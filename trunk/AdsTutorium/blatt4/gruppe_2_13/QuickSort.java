@@ -10,6 +10,11 @@ public class QuickSort {
 	 * @param untereGrenze Der erste Index des Arrays.
 	 * @param obereGrenze Der letze Index des Arrays.
 	 */
+	/**
+	 * @param array
+	 * @param untereGrenze
+	 * @param obereGrenze
+	 */
 	public static void variante3_QuickSort(int[]array,int untereGrenze,int obereGrenze){
 		int neueGrenze;
 		if(obereGrenze>untereGrenze){
@@ -47,7 +52,7 @@ public class QuickSort {
 	 * @param index1 Der Index des ersten Elements.
 	 * @param index2 Der Index des zweiten Elements.
 	 */
-	public static void tauche(int []array,int index1,int index2){
+	public static void tauche(int[] array,int index1,int index2){
 		int zwischenContainer=array[index1];
 		array[index1]=array[index2];
 		array[index2]=zwischenContainer;
@@ -69,7 +74,7 @@ public class QuickSort {
 		//int [] F = new int[] {10, 4, 33, 44, 17, 20, 3, 2, 9, 82, 38, 67, 55, 11, 32, 23, 19, 7, 6, 14, 29}; // "zufälliges" Feld
 //		# Rekusionen: 30 # Vergleiche: 119  # Vertauschungen: 31
 		
-		int [] F = new int [] {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};  // F ist schon sortiert
+		//int [] F = new int [] {1,2,3,4,5,6,7,8,9,10};  // F ist schon sortiert
 //		# Rekusionen: 8 # Vergleiche: 99  # Vertauschungen: 0	
 		
 //  	F = new int [] {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};  // F ist umgekehrt sortiert
@@ -98,7 +103,7 @@ public class QuickSort {
 //		F = new int [] {5, 5, 5, 5, 5, 5, 5, 5, 5, 5};  // F ist sortiert - alle Elemente sind gleich
 //		# Rekusionen: 8 # Vergleiche: 99  # Vertauschungen: 0	
 		//int []array=new int[6];
-		int []array={44,6,55,30,94,18,1,48,33,15,66};
+		int []F={1,6,55,30,94,18,1,10,33,15,9999};
 		print("eingegebene Array: ");
 		printArray(F);
 		variante3_QuickSort(F, 0, F.length-1);

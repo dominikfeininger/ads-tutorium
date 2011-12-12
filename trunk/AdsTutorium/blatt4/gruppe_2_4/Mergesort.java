@@ -8,7 +8,7 @@ public class Mergesort {
 
 	public static void main(String[] args) {
 
-		mergeSort("/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers05.txt");
+		mergeSort("/Users/feininger/Documents/workspace/AdsTutorium/blatt4/muster/txt/numbers02.txt");
 
 	}
 

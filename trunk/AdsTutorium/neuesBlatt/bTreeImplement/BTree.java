@@ -12,6 +12,13 @@ public class BTree {
 	public BTree() {
 		root = null;
 	}
+	/**
+	 * constuctor
+	 * @param new root node
+	 */
+	public BTree(TreeNode root) {
+		this.root = root;
+	}
 
 	public TreeNode getRoot() {
 		return this.root;
