@@ -148,7 +148,7 @@ public class MergeSort {
 		int currentZahl1, nextZahl1 = 0, currentZahl2, nextZahl2 = 0;
 		
 		// Indicating variable if the next variable must be read
-		boolean zahl1erhöhen = true, zahl2erhöhen = true;
+		boolean zahl1erhoehen = true, zahl2erhoehen = true;
 		// Indicating variable, if the last value of under file in already
 		// incorporated into the merger.
 		boolean istTheEndOfFile1 = false, istTheEndOfFile2 = false;
@@ -159,12 +159,12 @@ public class MergeSort {
 		currentZahl2 = readInt(zweiteTeilderDatei);
 		while (!isEndOfInputFile(ersteTeilderDatei)
 				&& !isEndOfInputFile(zweiteTeilderDatei)) {
-			if (zahl1erhöhen)
+			if (zahl1erhoehen)
 				nextZahl1 = readInt(ersteTeilderDatei);
-			if (zahl2erhöhen)
+			if (zahl2erhoehen)
 				nextZahl2 = readInt(zweiteTeilderDatei);
-			zahl1erhöhen = true;
-			zahl2erhöhen = true;
+			zahl1erhoehen = true;
+			zahl2erhoehen = true;
 			// ********************1*************************
 			if (nextZahl1 < currentZahl1) {// currentZahl1 is the last one of under treated
 									// group in the first under file
@@ -307,7 +307,7 @@ public class MergeSort {
 				if (currentZahl2 < currentZahl1) {
 					print(datei, " " + currentZahl2);
 					currentZahl2 = nextZahl2;
-					zahl1erhöhen = false;
+					zahl1erhoehen = false;
 					if (isEndOfInputFile(ersteTeilderDatei)) {
 						int zaehler = 0;
 						// Reposition on the front last element of under file
@@ -317,7 +317,7 @@ public class MergeSort {
 							readInt(ersteTeilderDatei);
 							zaehler++;
 						}
-						zahl1erhöhen = true;
+						zahl1erhoehen = true;
 					} else if (isEndOfInputFile(zweiteTeilderDatei)) {// current
 																		// value
 																		// of
@@ -338,7 +338,7 @@ public class MergeSort {
 				} else {
 					print(datei, " " + currentZahl1);
 					currentZahl1 = nextZahl1;
-					zahl2erhöhen = false;
+					zahl2erhoehen = false;
 					if (isEndOfInputFile(zweiteTeilderDatei)) {
 						int zaehler = 0;
 						// Reposition on the front last element of under file
@@ -348,7 +348,7 @@ public class MergeSort {
 							readInt(zweiteTeilderDatei);
 							zaehler++;
 						}
-						zahl2erhöhen = true;
+						zahl2erhoehen = true;
 					} else if (isEndOfInputFile(ersteTeilderDatei)) {// current
 																		// value
 																		// of
@@ -391,9 +391,9 @@ public class MergeSort {
 														// zweiteTeilderDatei,
 														// wenn es noch elemente
 														// drin stehen
-				boolean gearbeitet = false, zahlerhöhen = false;
+				boolean gearbeitet = false, zahlerhoehen = false;
 				while (!isEndOfInputFile(zweiteTeilderDatei)) {
-					if (zahlerhöhen)
+					if (zahlerhoehen)
 						currentZahl2 = readInt(zweiteTeilderDatei);
 					if (!gearbeitet && !istTheEndOfFile1) {
 						if (currentZahl1 < currentZahl2) {
@@ -405,15 +405,15 @@ public class MergeSort {
 					} else {
 						print(datei, " " + currentZahl2);
 					}
-					zahlerhöhen = true;
+					zahlerhoehen = true;
 				}
 				if (!gearbeitet && !istTheEndOfFile1)
 					print(datei, " " + currentZahl1);
 			}
 			if (!isEndOfInputFile(ersteTeilderDatei)) {
-				boolean gearbeitet = false, zahlerhöhen = false;
+				boolean gearbeitet = false, zahlerhoehen = false;
 				while (!isEndOfInputFile(ersteTeilderDatei)) {
-					if (zahlerhöhen)
+					if (zahlerhoehen)
 						currentZahl1 = readInt(ersteTeilderDatei);
 					if (!gearbeitet && !istTheEndOfFile2) {
 						if (currentZahl2 < currentZahl1) {
@@ -425,7 +425,7 @@ public class MergeSort {
 					} else {
 						print(datei, " " + currentZahl1);
 					}
-					zahlerhöhen = true;
+					zahlerhoehen = true;
 				}
 				if (!gearbeitet && !istTheEndOfFile2)
 					print(datei, " " + currentZahl2);
