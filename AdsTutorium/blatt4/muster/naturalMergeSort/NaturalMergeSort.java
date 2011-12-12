@@ -3,6 +3,7 @@ package muster.naturalMergeSort;
 
 /**
  * Created on 03.12.2003
+
  * 
  * @author Wolfgang Schramm
  *
