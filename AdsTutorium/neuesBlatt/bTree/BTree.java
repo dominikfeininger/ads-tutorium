@@ -1,65 +1,107 @@
 package bTree;
 
+import java.util.NoSuchElementException;
+
 public class BTree {
+        private BNode root;
 
-	private BNode root;
+        public BTree() {
+                setRoot(null);
+        }
 
-	/**
-	 * B Tree saves any kind of BNodes
-	 * 
-	 * constuctor
-	 * 
-	 * @param root
-	 */
-	public BTree(BNode root) {
-		this.root = root;
-	}
+        public void inorderDisplay(BNode node) {
+                if (node != null) {
+                        inorderDisplay(node.left);
+                        System.out.print(node.key + " ");
+                        inorderDisplay(node.right);
+                }
+        }
 
-	public void insert(BNode node) {
-		// insert as root
-		if (root == null) {
-			this.root = node;
-		} else {
-			// insert as child, smaller than parent
-			if (node.getValue() < root.getValue()) {
-				root.setKey0(node);
-				node.setLeaf(true);
-			} else {
-				// insert as child, bigger than parent
-				root.setKey1(node);
-				node.setLeaf(true);
-			}
+        public void insert(int value) {
+                BNode y = null; // 指向插入位置的parent
+                BNode x = getRoot(); // 指向插入的位置
+                while (x != null) {
+                        y = x;
+                        if (value < x.key) {
+                                x = x.left;
+                        } else {
+                                x = x.right;
+                        }
+                }
+                BNode z = new BNode(value);
+                z.parent = y;
+                if (y == null) {
+                        setRoot(z);
+                } else {
+                        {
+                                if (value < y.key) {
+                                        y.left = z;
+                                } else {
+                                        y.right = z;
+                                }
+                        }
+
+                }
+
+        }
+
+        public boolean contains(BNode node, int value) {
+                if (node == null)
+                        return false;
+                if (node.key == value)
+                        return true;
+                if (value < node.key) {
+                        return contains(node.left, value);
+                } else
+                        return contains(node.right, value);
+
+        }
+
+        public boolean contains(int value) {
+                BNode x = getRoot();
+                if (x == null)
+                        return false;
+                while (value != x.key) {
+                        if (value < x.key) {
+                                x = x.left;
+                        } else
+                                x = x.right;
+                        if (x == null)
+                                return false;
+
+                }
+                return true;
+
+        }
+
+        public int minValue() {
+                BNode node = getRoot();
+                while (node.left != null) {
+                        node = node.left;
+                }
+                if (node != null)
+                        return node.key;
+                else
+                        throw new NoSuchElementException();
+        }
+
+        public int maxValue() {
+                BNode node = getRoot();
+                while (node.right != null) {
+                        node = node.right;
+                }
+                if (node != null)
+                        return node.key;
+                else
+                        throw new NoSuchElementException();
+        }
+
+		public void setRoot(BNode root) {
+			this.root = root;
 		}
-	}
 
-	public void printRoot() {
-		System.out.println(root.getValue());
-	}
-
-	public void printTree(BNode node) {
-		// print root node
-		System.out.println(node.getValue());
-		// print childs
-		if (!node.getKey0().isLeaf()) {
-			printTree(node.getKey0());
-		} else {
-			System.out.println(node.getKey0().getValue());
+		public BNode getRoot() {
+			return root;
 		}
-		if (!node.getKey1().isLeaf()) {
-			printTree(node.getKey1());
-		} else {
-			System.out.println(node.getKey1().getValue());
-		}
-
-	}
-
-	// getter and setter
-	public BNode getRoot() {
-		return root;
-	}
-
-	public void setRoot(BNode root) {
-		this.root = root;
-	}
 
 }
