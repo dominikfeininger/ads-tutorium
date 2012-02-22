@@ -1,5 +1,11 @@
 package bTree;
 
+/**
+ * 
+ * @author feininger
+ *
+ */
+
 public class BNode {
 	//has properties
 	int key;

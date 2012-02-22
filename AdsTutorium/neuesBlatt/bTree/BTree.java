@@ -2,6 +2,12 @@ package bTree;
 
 import java.util.NoSuchElementException;
 
+/**
+ * 
+ * @author feininger
+ *
+ */
+
 public class BTree {
 	private BNode root;
 	
