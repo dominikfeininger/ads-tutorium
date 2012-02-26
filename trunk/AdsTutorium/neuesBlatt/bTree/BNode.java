@@ -7,7 +7,7 @@ package bTree;
  */
 
 public class BNode {
-	//has properties
+	//properties
 	int key;
 	BNode parent;
 	BNode left;
