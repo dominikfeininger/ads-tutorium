@@ -36,11 +36,11 @@ public class InsertionSort {
 	}
 	
 	private static int[] createRandomArray(int anzahl) {
-		int[] rückgabeA = new int[anzahl];
+		int[] ruckgabeA = new int[anzahl];
 		
 		for(int i = 0; i < anzahl; i++) {
-			rückgabeA[i] = (int) Math.floor(Math.random()*anzahl);
+			ruckgabeA[i] = (int) Math.floor(Math.random()*anzahl);
 		}
-		return rückgabeA;
+		return ruckgabeA;
 	}
 }
