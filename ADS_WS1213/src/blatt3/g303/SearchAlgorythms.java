@@ -29,15 +29,15 @@ public class SearchAlgorythms {
 	}
 	
 	public static int lineareSuchelangA(int[] suche, int suchnummer){
-		int zähler = -1;
+		int zahler = -1;
 		
 		for (int i = 0;i < suche.length; i++){
 			if (suche[i] == suchnummer){
-				zähler = i;
+				zahler = i;
 			}
 			
 		}
-		return zähler;	
+		return zahler;	
 	}
 	
 	public static int binarySearchD(int [] array, int suchnummer) {

@@ -8,7 +8,7 @@ import static gdi.MakeItSimple.*;
 
 public class BinaryInsertion {
   
-	public static int zählervergleiche = 0, zählervertauschungen = 0, anzahl = 4096;
+	public static int zahlervergleiche = 0, zahlervertauschungen = 0, anzahl = 4096;
 	public static void main (String[] args){
 		
 		int[] array = new int[anzahl];
@@ -19,7 +19,7 @@ public class BinaryInsertion {
 			print(array[i] + " ");
 			
 
-		}print("\nvergleiche: "  + "\t"+ zählervergleiche + "\n" + "vertauschungen: "  + zählervertauschungen);
+		}print("\nvergleiche: "  + "\t"+ zahlervergleiche + "\n" + "vertauschungen: "  + zahlervertauschungen);
 	}
 	
 	
@@ -31,7 +31,7 @@ public class BinaryInsertion {
             int right=i;
             while (left<right){
                 int middle=(left+right)/2;
-                zählervergleiche++;
+                zahlervergleiche++;
                 if (temp>=array[middle]){
                     left=middle + 1;
                 }else{
@@ -40,7 +40,7 @@ public class BinaryInsertion {
             }
             
             for (int j=i;j>left;--j){
-            	zählervertauschungen++;
+            	zahlervertauschungen++;
             	int k=array[j-1];
                  array[j-1]=array[j];
                  array[j]=k;
